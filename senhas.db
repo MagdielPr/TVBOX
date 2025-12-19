@@ -1,0 +1,28 @@
+�QLite format 3@  ▒▒.zq
+ ���6
+     �
+      ��z�StablevotosvotosCREATE TABLE votos (
+                id_voto INTEGER PRIMARY KEY AUTOINCREMENT,
+                opcao_votada TEXT NOT NULL,
+                data_voto TEXT NOT NULL,
+                codigo_confirmacao TEXT NOT NULL
+            )�O%%�atableatendimentosatendimentosCREATE TABLE atendimentos (
+                id_atendimento INTEGER PRIMARY KEY AUTOINCREMENT,
+                id_senha INTEGER NOT NULL,
+                data_atendimento TEXT NOT NULL,
+                duracao INTEGER,
+                FOREIGN KEY (id_senha) REFERENCES senhas(id_senha)
+            )P++Ytablesqlite_sequencesqlite_sequenceCREATE TABLE sqlite_sequence(name,seq)�@�[tablesenhassenhasCREATE TABLE senhas (
+                id_senha INTEGER PRIMARY KEY AUTOINCREMENT,
+                numero TEXT NOT NULL UNIQUE,
+                prioridade INTEGER NOT NULL DEFAULT 0,
+                status TEXT NOT NULL DEFAULT 'pendente',
+                data_emissao TEXT NOT NULL
+�           )+?indexsqlite_autoindex_senhas_1senhas
+Q�b�;���xQ%
+3A007pendente2025-10-30 21:31:44%               3P003pendente2025-10-30 21:31:43A006pendente2025-10-30 21:31:39%        3P002pendente2025-10-30 21:21:223A005pendente2025-10-30 21:21:19%     3P001pendente2025-10-30 21:21:163A004pendente2025-10-30 21:21:153A002concluido2025-09-26 19:58:113A001concluido2025-09-26 19:52:29!)3A003em_atendimento2025-09-26 20:11:59
+
+����������A007
+����   Avotos%atendimentos02    A001
+senhas
+���j8�03+OPÇÃO A2025-11-03 10:58:34V2025110310583403+OPÇÃO A2025-10-31 08:34:50V2025103108345003+OPÇÃO A2025-10-31 08:34:45V2025103108344503+OPÇÃO C2025-10-31 08:31:59V2025103108315903+OPÇÃO B2025-10-30 21:36:39V2025103021363903+OPÇÃO A2025-10-30 21:36:25V20251030213625                                                              
